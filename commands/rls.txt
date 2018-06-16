@@ -1,0 +1,37 @@
+rls
+--- Server
+Child 2310: Establishing data connection
+Child 2310: data socket created with descriptor 5
+Child 2310: data socket bound to port 40955
+Child 2310: listening on data socket
+Child 2310: Sending acknowledgement -> A40955
+Child 2310: Accepted connection from host localhost on the data socket with descriptor 6
+Child 2310: Data socket port number on the client end is 33464
+Child 2310: Sending positive acknowledgement
+Child 2310: forking ls process
+Child 2310: ls command completed
+
+---Client
+Command string = 'rls'
+Executing remote ls command
+Sent D command to server
+Awaiting server response
+Received server response: 'A40955'
+Obtained port number 40955 from server
+Created data socket with descriptor 4
+Data Socket Address/Port => 127.0.0.1:40955
+Attempting to establish Data Connection...
+Data connection to server established
+Awaiting server response
+Received server response: 'A'
+Displaying response from server
+Displaying data from server & forking to 'more'...
+Waiting for child process 2537 to complete execution of more
+total 68
+drwxrwxr-x 3 ron ron  4096 Apr 27 14:13 .
+drwxrwxr-x 3 ron ron  4096 Apr 29 16:50 ..
+-rwxr-xr-x 1 ron ron 26737 Apr 17 10:17 mftp
+-rwxr-xr-x 1 ron ron 25182 Apr 17 10:17 mftpserve
+drwxrwxr-x 2 ron ron  4096 Apr 26 02:22 test
+Data display & more command completed.
+MFTP> 

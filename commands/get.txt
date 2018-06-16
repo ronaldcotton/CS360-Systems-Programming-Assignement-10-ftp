@@ -1,0 +1,31 @@
+get
+---Client
+Command string = 'get' with parameter = 'testfile'
+Getting testfile from server and storing to testfile
+Sent D command to server
+Awaiting server response
+Received server response: 'A57379'
+Obtained port number 57379 from server
+Created data socket with descriptor 5
+Data Socket Address/Port => 127.0.0.1:57379
+Attempting to establish Data Connection...
+Data connection to server established
+Awaiting server response
+Received server response: 'A'
+Read 43 bytes from server, writing to local file
+
+---Server
+Child 3173: Establishing data connection
+Child 3173: data socket created with descriptor 5
+Child 3173: data socket bound to port 57379
+Child 3173: listening on data socket
+Child 3173: Sending acknowledgement -> A57379
+Child 3173: Accepted connection from host localhost on the data socket with descriptor 6
+Child 3173: Data socket port number on the client end is 44422
+Child 3173: Reading file testfile
+Child 3173: Sending positive acknowledgement
+Child 3173: transmitting file testfile to client
+Child 3173: Done transmitting file to client.
+Child 3173: Control Socket EOF detected, exiting
+
+

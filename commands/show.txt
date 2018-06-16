@@ -1,0 +1,72 @@
+show *no file
+---Server
+Child 2681: Establishing data connection
+Child 2681: data socket created with descriptor 5
+Child 2681: data socket bound to port 43952
+Child 2681: listening on data socket
+Child 2681: Sending acknowledgement -> A43952
+Child 2681: Accepted connection from host localhost on the data socket with descriptor 6
+Child 2681: Data socket port number on the client end is 44116
+Child 2681: Reading file mftp.c
+Child 2681: Sending acknowledgement -> ENo such file or directory
+Child 2681: open of mftp.c failed: No such file or directory
+Child 2681: Done transmitting file to client.
+
+---Client
+MFTP> show mftp.c
+Command string = 'show' with parameter = 'mftp.c'
+Showing file mftp.c
+Sent D command to server
+Awaiting server response
+Received server response: 'A43952'
+Obtained port number 43952 from server
+Created data socket with descriptor 4
+Data Socket Address/Port => 127.0.0.1:43952
+Attempting to establish Data Connection...
+Data connection to server established
+Awaiting server response
+Error response from server: No such file or directory
+Received server response: 'ENo such file or directory'
+MFTP>
+
+----------
+show
+---Server
+Child 3127: Establishing data connection
+Child 3127: data socket created with descriptor 5
+Child 3127: data socket bound to port 38814
+Child 3127: listening on data socket
+Child 3127: Sending acknowledgement -> A38814
+Child 3127: Accepted connection from host localhost on the data socket with descriptor 6
+Child 3127: Data socket port number on the client end is 57294
+Child 3127: Reading file testfile
+Child 3127: Sending positive acknowledgement
+Child 3127: transmitting file testfile to client
+Child 3127: Done transmitting file to client.
+
+---Client
+MFTP> show testfile
+Command string = 'show' with parameter = 'testfile'
+Showing file testfile
+Sent D command to server
+Awaiting server response
+Received server response: 'A38814'
+Obtained port number 38814 from server
+Created data socket with descriptor 4
+Data Socket Address/Port => 127.0.0.1:38814
+Attempting to establish Data Connection...
+Data connection to server established
+Awaiting server response
+Received server response: 'A'
+Displaying data from server & forking to 'more'...
+Waiting for child process 3132 to complete execution of more
+this is a test file...
+this
+is
+a
+test
+file
+Data display & more command completed.
+
+
+

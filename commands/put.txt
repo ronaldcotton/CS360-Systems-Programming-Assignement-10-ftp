@@ -1,0 +1,30 @@
+put
+---Server
+Child 3173: Establishing data connection
+Child 3173: data socket created with descriptor 5
+Child 3173: data socket bound to port 53612
+Child 3173: listening on data socket
+Child 3173: Sending acknowledgement -> A53612
+Child 3173: Accepted connection from host localhost on the data socket with descriptor 6
+Child 3173: Data socket port number on the client end is 60868
+Child 3173: Writing file testfile
+Child 3173: Sending positive acknowledgement
+Child 3173: receiving file testfile from client
+Child 3173: Done receiving file.
+
+---Client
+Command string = 'put' with parameter = 'testfile'
+Putting file testfile to testfile
+Opened local file testfile for reading
+Sent D command to server
+Awaiting server response
+Received server response: 'A53612'
+Obtained port number 53612 from server
+Created data socket with descriptor 5
+Data Socket Address/Port => 127.0.0.1:53612
+Attempting to establish Data Connection...
+Data connection to server established
+Awaiting server response
+Received server response: 'A'
+Writing 43 bytes to server
+Closing local file

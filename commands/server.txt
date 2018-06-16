@@ -1,0 +1,95 @@
+Init
+-----
+Parent: Debug output enabled.
+Parent: socket created with descriptor 3
+Parent: socket bound to port 49999
+Parent: listening with connection queue of 4
+
+Connection
+----------
+Parent: spawned child 11104, waiting for new connection
+Child 11104: started
+Child 11104: Translation of client hostname failed -> Unknown host
+Child 11104: Client IP address -> 0.0.0.0
+Child 11104: Connection accepted from host 0.0.0.0
+
+Exit
+-----
+Child 11138: Quitting
+Child 11138: Sending positive acknowledgement
+Child 11138: exiting normally.
+
+CD
+-----
+NA
+
+LS
+-----
+NA
+
+RCD
+-----
+Child 11150: started
+Child 11150: Connection accepted from host localhost
+Child 11150: Changed current directory to ..
+Child 11150: Sending positive acknowledgement
+
+RLS
+-----
+Child 11150: Establishing data connection
+Child 11150: data socket created with descriptor 5
+Child 11150: data socket bound to port 51557
+Child 11150: listening on data socket
+Child 11150: Sending acknowledgement -> A51557
+Child 11150: Accepted connection from host localhost on the data socket with descriptor 6
+Child 11150: Data socket port number on the client end is 39398
+Child 11150: Sending positive acknowledgement
+Child 11150: forking ls process
+Child 11150: ls command completed
+
+
+GET
+-----
+Child 11150: Establishing data connection
+Child 11150: data socket created with descriptor 5
+Child 11150: data socket bound to port 45334
+Child 11150: listening on data socket
+Child 11150: Sending acknowledgement -> A45334
+Child 11150: Accepted connection from host localhost on the data socket with descriptor 6
+Child 11150: Data socket port number on the client end is 50416
+Child 11150: Reading file mftp
+Child 11150: Sending positive acknowledgement
+Child 11150: transmitting file mftp to client
+Child 11150: Done transmitting file to client.
+
+PUT
+-----
+Child 11150: Establishing data connection
+Child 11150: data socket created with descriptor 5
+Child 11150: data socket bound to port 37399
+Child 11150: listening on data socket
+Child 11150: Sending acknowledgement -> A37399
+Child 11150: Accepted connection from host localhost on the data socket with descriptor 6
+Child 11150: Data socket port number on the client end is 41392
+Child 11150: Writing file blah
+Child 11150: Sending positive acknowledgement
+Child 11150: receiving file blah from client
+Child 11150: Done receiving file.
+
+SHOW
+-----
+
+Child 11391: Establishing data connection
+Child 11391: data socket created with descriptor 5
+Child 11391: data socket bound to port 36227
+Child 11391: listening on data socket
+Child 11391: Sending acknowledgement -> A36227
+Child 11391: Accepted connection from host localhost on the data socket with descriptor 6
+Child 11391: Data socket port number on the client end is 33210
+Child 11391: Reading file TODO.md
+Child 11391: Sending positive acknowledgement
+Child 11391: transmitting file TODO.md to client
+Child 11391: Done transmitting file to client.
+
+
+
